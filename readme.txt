@@ -14,9 +14,13 @@ This plugin creates a short URL from the blog post permalink and stores it
 in the database. The URL is displayed below the blog post along with a link
 to twitter that passes the short URL on.
 
-You can chose from different URL services:
+You can use all short URL services that offer an API. Here are a few:
 
-http://flaturl.com/
+http://unrelo.com/
+http://bit.ly/
+http://u.nu/
+http://is.gd/
+http://tinyurl.com/
 
 == Installation ==
 
