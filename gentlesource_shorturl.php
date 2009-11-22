@@ -14,6 +14,82 @@ define('DEFAULT_API_URL', 'http://unrelo.com/?api=smile&u=%s');
 
 class GentleSource_Short_URL
 {
+    /**
+     * List of short URL website API URLs
+     */
+    function api_urls()
+    {
+        return array(
+            array(
+                'name' => 'unrelo.com',
+                'url'  => 'http://unrelo.com/?api=1&u=%s',
+                ),
+            array(
+                'name' => 'lin.io',
+                'url'  => 'http://lin.io/?api=1&u=%s',
+                ),
+            array(
+                'name' => 'bit.ly',
+                'url'  => 'http://bit.ly/api?url=%s',
+                ),
+            array(
+                'name' => 'u.nu',
+                'url'  => 'http://u.nu/unu-api-simple?url=%s',
+                ),
+            array(
+                'name' => 'is.gd',
+                'url'  => 'http://is.gd/api.php?longurl=%s  ',
+                ),
+            array(
+                'name' => 'tinyurl.com',
+                'url'  => 'http://tinyurl.com/api-create.php?url=%s',
+                ),
+            array(
+                'name' => 'a.gd',
+                'url'  => 'http://a.gd/?module=ShortURL&file=Add&mode=API&url=%s',
+                ),
+            array(
+                'name' => 'cuthut.com',
+                'url'  => 'http://cuthut.com/api/?url=%s',
+                ),
+            array(
+                'name' => 'to.ly',
+                'url'  => 'http://to.ly/api.php?longurl=%',
+                ),
+            array(
+                'name' => 'fwd4.me',
+                'url'  => 'http://api.fwd4.me/?url=%s',
+                ),
+            array(
+                'name' => 'piurl.com',
+                'url'  => 'http://www.piurl.com/api.php?url=%s',
+                ),
+            array(
+                'name' => 'su.pr',
+                'url'  => 'http://su.pr/api?url=%s',
+                ),
+            array(
+                'name' => 'redir.ec',
+                'url'  => 'http://redir.ec/_api/rest/redirec/create?url=%s',
+                ),
+            array(
+                'name' => 'siteo.us',
+                'url'  => 'http://siteo.us/core.api/?url=%s',
+                ),
+            array(
+                'name' => 'href.be',
+                'url'  => 'http://href.be/api?url=%s',
+                ),
+            array(
+                'name' => 'p.ly',
+                'url'  => 'http://p.ly/api/shorten?url=%s',
+                ),
+            array(
+                'name' => 'zip.li',
+                'url'  => 'http://zip.li/api?longUrl=%s',
+                ),
+            );
+    }
 
     /**
      * Create short URL based on post URL
@@ -77,6 +153,7 @@ class GentleSource_Short_URL
      */
     function settings()
     {
+        $apiUrls = $this->api_urls();
         $options = $this->options();
         $opt = array();
 

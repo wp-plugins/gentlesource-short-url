@@ -15,13 +15,11 @@
     <td>
         <input type="text" name="ApiUrl" value="<?php echo $opt['ApiUrl'] ?>" style="width:550px;" /><br />
         <p><?php echo __('Following API URLs are available') ?></p>
-        <pre>
-http://unrelo.com/?api=smile&u=%s
-http://bit.ly/api?url=%s
-http://u.nu/unu-api-simple?url=%s
-http://is.gd/api.php?longurl=%s
-http://tinyurl.com/api-create.php?url=%s
-        </pre>
+          <select name="ApiUrlList" size="1" onchange="this.form.ApiUrl.value = this.form.ApiUrlList.value;">
+            <?php foreach ($apiUrls as $item): ?>
+              <option value="<?php echo $item['url'] ?>"><?php echo $item['name'] ?></option>
+            <?php endforeach ?>
+          </select>
     </td>
   <tr>
 

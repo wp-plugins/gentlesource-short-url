@@ -1,10 +1,8 @@
 === GentleSource Short URL ===
 Contributors: GentleSource
-Donate link: 
-Tags: short url, short, url, shortener, shortening, urls, links, tinyurl
+Tags: short url, short, url, shortener, url shortener, url shortening, urls, links, tinyurl
 Requires at least: 2.5
 Tested up to: 2.8.6
-Stable tag: 1.0.0
 
 Automatically shortens the blog post URL.
 
@@ -16,11 +14,12 @@ to twitter that passes the short URL on.
 
 You can use all short URL services that offer an API. Here are a few:
 
-http://unrelo.com/
-http://bit.ly/
-http://u.nu/
-http://is.gd/
-http://tinyurl.com/
+* http://lin.io/
+* http://unrelo.com/
+* http://bit.ly/
+* http://u.nu/
+* http://is.gd/
+* http://tinyurl.com/
 
 == Installation ==
 
@@ -30,7 +29,14 @@ http://tinyurl.com/
 
 == Changelog ==
 
-1.0.0 - Initial release
+= 1.1.0 =
+
+* Added more API URLs
+* Improved API URL selection
+
+= 1.0.0 =
+
+* Initial release
 
 == Frequently Asked Questions ==
 
@@ -39,4 +45,3 @@ No questions yet.
 == Screenshots ==
 
 1. Short URL settings page
-2. Frontend
