@@ -18,7 +18,6 @@ You can use all short URL services that offer an API. Here are a few:
 * http://unrelo.com/
 * http://bit.ly/
 * http://u.nu/
-* http://is.gd/
 * http://tinyurl.com/
 
 == Installation ==

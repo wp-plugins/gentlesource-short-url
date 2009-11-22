@@ -37,10 +37,6 @@ class GentleSource_Short_URL
                 'url'  => 'http://u.nu/unu-api-simple?url=%s',
                 ),
             array(
-                'name' => 'is.gd',
-                'url'  => 'http://is.gd/api.php?longurl=%s  ',
-                ),
-            array(
                 'name' => 'tinyurl.com',
                 'url'  => 'http://tinyurl.com/api-create.php?url=%s',
                 ),
@@ -49,20 +45,8 @@ class GentleSource_Short_URL
                 'url'  => 'http://a.gd/?module=ShortURL&file=Add&mode=API&url=%s',
                 ),
             array(
-                'name' => 'cuthut.com',
-                'url'  => 'http://cuthut.com/api/?url=%s',
-                ),
-            array(
-                'name' => 'to.ly',
-                'url'  => 'http://to.ly/api.php?longurl=%',
-                ),
-            array(
                 'name' => 'fwd4.me',
                 'url'  => 'http://api.fwd4.me/?url=%s',
-                ),
-            array(
-                'name' => 'piurl.com',
-                'url'  => 'http://www.piurl.com/api.php?url=%s',
                 ),
             array(
                 'name' => 'su.pr',
@@ -73,16 +57,8 @@ class GentleSource_Short_URL
                 'url'  => 'http://redir.ec/_api/rest/redirec/create?url=%s',
                 ),
             array(
-                'name' => 'siteo.us',
-                'url'  => 'http://siteo.us/core.api/?url=%s',
-                ),
-            array(
                 'name' => 'href.be',
                 'url'  => 'http://href.be/api?url=%s',
-                ),
-            array(
-                'name' => 'p.ly',
-                'url'  => 'http://p.ly/api/shorten?url=%s',
                 ),
             array(
                 'name' => 'zip.li',
@@ -116,7 +92,7 @@ class GentleSource_Short_URL
         $result = false;
 
         if (ini_get('allow_url_fopen')) {
-            if ($handle = fopen($apiURL, 'r')) {
+            if ($handle = @fopen($apiURL, 'r')) {
                 $result = fread($handle, 4096);
                 fclose($handle);
             }
@@ -124,7 +100,7 @@ class GentleSource_Short_URL
             $ch = curl_init($apiURL);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
-            $result = curl_exec($ch);
+            $result = @curl_exec($ch);
             curl_close($ch);
         }
 
