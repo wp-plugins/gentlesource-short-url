@@ -1,6 +1,6 @@
 === GentleSource Short URL ===
 Contributors: GentleSource
-Tags: short url, short, url, shortener, url shortener, url shortening, urls, links, tinyurl
+Tags: short url, short, url, shortener, url shortener, url shortening, urls, links, tinyurl, twitter, microblogging
 Requires at least: 2.5
 Tested up to: 2.8.6
 
