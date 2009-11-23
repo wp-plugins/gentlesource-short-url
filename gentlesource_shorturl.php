@@ -3,7 +3,7 @@
 Plugin Name: GentleSource Short URL
 Plugin URI: http://www.gentlesource.com/plugins/short-url/
 Description: Automatically shortens the blog post URL.
-Version: 1.0.0
+Version: 1.1.0
 Author: GentleSource
 Author URI: http://www.gentlesource.com/
 */
