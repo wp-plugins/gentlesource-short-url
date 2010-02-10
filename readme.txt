@@ -28,6 +28,10 @@ You can use all short URL services that offer an API. Here are a few:
 
 == Changelog ==
 
+= 1.1.1 =
+
+* Bugfix: Wrong path for settings template
+
 = 1.1.0 =
 
 * Added more API URLs

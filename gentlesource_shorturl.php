@@ -3,7 +3,7 @@
 Plugin Name: GentleSource Short URL
 Plugin URI: http://www.gentlesource.com/plugins/short-url/
 Description: Automatically shortens the blog post URL.
-Version: 1.1.0
+Version: 1.1.1
 Author: GentleSource
 Author URI: http://www.gentlesource.com/
 */
@@ -63,6 +63,10 @@ class GentleSource_Short_URL
             array(
                 'name' => 'zip.li',
                 'url'  => 'http://zip.li/api?longUrl=%s',
+                ),
+            array(
+                'name' => 'mug.im',
+                'url'  => 'http://mug.im/create?url=%s&format=text',
                 ),
             );
     }
@@ -146,7 +150,7 @@ class GentleSource_Short_URL
         {
             $opt[$key] = get_option('gentlesourceShortUrl' . $key);
         }
-        include '../wp-content/plugins/gentlesource_shorturl/template/settings.tpl.php';
+        include '../wp-content/plugins/gentlesource-short-url/template/settings.tpl.php';
     }
 
     /**
