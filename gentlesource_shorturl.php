@@ -193,7 +193,7 @@ class GentleSource_Short_URL
         $shortUrlEncoded = urlencode($shortUrl);
 
         ob_start();
-        include './wp-content/plugins/gentlesource_shorturl/template/public.tpl.php';
+        include './wp-content/plugins/gentlesource-short-url/template/public.tpl.php';
         $content .= ob_get_contents();
         ob_end_clean();
 

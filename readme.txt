@@ -30,6 +30,7 @@ You can use all short URL services that offer an API. Here are a few:
 
 = 1.1.2 =
 
+* Bugfix: Wrong path for public template
 * Change: Don't display anything if there is no short URL
 
 = 1.1.1 =
