@@ -28,9 +28,12 @@ You can use all short URL services that offer an API. Here are a few:
 
 == Changelog ==
 
-= 1.1.2 =
+= 1.1.3 =
 
 * Bugfix: Wrong path for public template
+
+= 1.1.2 =
+
 * Change: Don't display anything if there is no short URL
 
 = 1.1.1 =
