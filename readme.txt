@@ -2,7 +2,7 @@
 Contributors: GentleSource
 Tags: short url, short, url, shortener, url shortener, url shortening, urls, links, tinyurl, twitter, microblogging
 Requires at least: 2.5
-Tested up to: 2.8.6
+Tested up to: 2.9.2
 
 Automatically shortens the blog post URL.
 
@@ -27,6 +27,10 @@ You can use all short URL services that offer an API. Here are a few:
 3. You can change the default short URL service in 'Settings' -> 'Short URL'
 
 == Changelog ==
+
+= 1.1.2 =
+
+* Change: Don't display anything if there is no short URL
 
 = 1.1.1 =
 

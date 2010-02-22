@@ -3,7 +3,7 @@
 Plugin Name: GentleSource Short URL
 Plugin URI: http://www.gentlesource.com/plugins/short-url/
 Description: Automatically shortens the blog post URL.
-Version: 1.1.1
+Version: 1.1.2
 Author: GentleSource
 Author URI: http://www.gentlesource.com/
 */
@@ -20,6 +20,10 @@ class GentleSource_Short_URL
     function api_urls()
     {
         return array(
+            array(
+                'name' => '',
+                'url'  => '',
+                ),
             array(
                 'name' => 'unrelo.com',
                 'url'  => 'http://unrelo.com/?api=1&u=%s',
@@ -181,6 +185,11 @@ class GentleSource_Short_URL
         }
 
         $shortUrl = get_post_meta($post->ID, 'GentleSourceShortURL', true);
+
+        if (empty($shortUrl)) {
+            return $content;
+        }
+
         $shortUrlEncoded = urlencode($shortUrl);
 
         ob_start();
