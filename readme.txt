@@ -28,6 +28,11 @@ You can use all short URL services that offer an API. Here are a few:
 
 == Changelog ==
 
+= 1.1.4 =
+
+* Change: unrelo.com API key
+
+
 = 1.1.3 =
 
 * Bugfix: Wrong path for public template
