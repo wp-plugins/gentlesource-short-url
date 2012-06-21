@@ -29,7 +29,7 @@ You can use all short URL services that offer an API. Here are a few:
 
 == Changelog ==
 
-= 1.2.0 "
+= 1.2.0 =
 
 * Added melt.li
 
