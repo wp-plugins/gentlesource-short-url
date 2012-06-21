@@ -2,7 +2,7 @@
 Contributors: GentleSource
 Tags: short url, short, url, shortener, url shortener, url shortening, urls, links, tinyurl, twitter, microblogging
 Requires at least: 2.5
-Tested up to: 2.9.2
+Tested up to: 3.4
 
 Automatically shortens the blog post URL.
 
@@ -14,6 +14,7 @@ to twitter that passes the short URL on.
 
 You can use all short URL services that offer an API. Here are a few:
 
+* http://melt.li/
 * http://lin.io/
 * http://unrelo.com/
 * http://bit.ly/
@@ -27,6 +28,10 @@ You can use all short URL services that offer an API. Here are a few:
 3. You can change the default short URL service in 'Settings' -> 'Short URL'
 
 == Changelog ==
+
+= 1.2.0 "
+
+* Added melt.li
 
 = 1.1.4 =
 
